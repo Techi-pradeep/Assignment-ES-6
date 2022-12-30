@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES-6 Assignment</title>
+</head>
+
+<body>
+
+<div id="car"></div>
+
+<script>
+        class cars{                            // Class is created
+            getcompany(car_company) {          // Method 1 - Get Car Company   
+            this.car_company = car_company;   
+            }
+            getmodel(car_model){               // Method 2 - Get Car Model  
+                this.car_model = car_model;  
+            }
+           
+      }
+      function info() {                       // Fucntion to Get the Car info
+            let carinfo = document.getElementById('car');
+            carinfo.innerHTML = "I have a " + car1.car_company + ", it is a " + car1.car_model+".";
+        }
+
+    const car1 = new cars();                  // Object Created for Cars  
+    car1.getcompany("Ford");                  // Method 1 Called
+    car1.getmodel("Mustang");                 // Method 2 Called  
+    info();                                   // Car info 
+
+</script>
+
+</body>
+
+</html>
