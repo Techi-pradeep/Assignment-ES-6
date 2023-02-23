@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES-6 Assignment</title>
+</head>
+<style>
+    body {
+        background-color: black;
+        color: white;
+        font-size: 33px;
+
+    }
+</style>
+
+<body>
+
+    <div id="car"></div>
+
+
+    <script>
+        class Cars {
+            constructor() {
+                this.car_company = '';
+                this.car_model = '';
+            }
+
+            getCompany(car_company) {
+                this.car_company = car_company;
+            }
+
+            getModel(car_model) {
+                this.car_model = car_model;
+            }
+        }
+
+        const car_company = 'Jeep';
+        const car_model = 'XUV';
+
+        const car1 = new Cars();
+        car1.getCompany(car_company);
+        car1.getModel(car_model);
+
+        info();
+
+        function info() {
+            const carInfo = document.getElementById('car');
+            carInfo.innerHTML = `I have a ${car1.car_company}, it is a ${car1.car_model}.`;
+        }
+
+    </script>
+</body>
+
+</html>
